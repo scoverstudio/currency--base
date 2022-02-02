@@ -16,7 +16,7 @@ const ResultBox = ({ from, to, amount, wrongValue, sameCurrencyError }) => {
     () => formatAmountInCurrency(amount, from),
     [amount, from]
   );
-  console.log(from === to);
+  
   return (
     <div className={styles.result} data-testid="output">
       {amount < 0
